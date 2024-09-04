@@ -50,6 +50,25 @@ git clone https://github.com/AnikanovAleksei/HW_14.1
 - add_product(self, product): Метод для добавления нового продукта в категорию.
 
 - products (property): Свойство, которое возвращает строковое представление всех продуктов в категории с информацией о цене и количестве.
+
+## Smartphone
+Класс Smartphone наследуется от класса Product и добавляет следующие свойства: 
+ 
+efficiency (float): Эффективность смартфона. 
+model (str): Модель смартфона. 
+memory (int): Объем памяти смартфона. 
+### Методы 
+__init__(self, name: str, description: str, price: float, quantity: int, efficiency: float, model: str, memory: int, color: str): Конструктор для инициализации нового объекта смартфона. 
+
+## LawnGrass 
+Класс LawnGrass наследуется от класса Product и добавляет следующие свойства: 
+ 
+country (str): Страна происхождения газонной травы. 
+germination_period (str): Период прорастания газонной травы. 
+
+### Методы 
+__init__(self, name: str, description: str, price: float, quantity: int, country: str, germination_period: str, color: str): Конструктор для инициализации нового объекта газонной травы.
+
 ## Вклад
 
 Пожалуйста, оставляйте свои предложения и исправления. Ваши комментарии помогут улучшить проект!
