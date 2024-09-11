@@ -2,7 +2,13 @@ from abc import ABC, abstractmethod
 
 
 class MixinLog:
-    def init(self, *args, **kwargs) -> None:
+    def __init__(self):
+        self.quantity = None
+        self.price = None
+        self.description = None
+        self.name = None
+
+    def log(self):
         print(repr(self))
 
     def __repr__(self):
@@ -36,7 +42,7 @@ class Product(MixinLog, BaseProduct):
         self.quantity = quantity
         self.color = color
         # Вызов init после инициализации всех атрибутов
-        super().init()
+        super().log()
 
     def get_name(self):
         return self.name
